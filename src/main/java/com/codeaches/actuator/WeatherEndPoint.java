@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @Component
 @Endpoint(id = "weather")
-public class MyPointEndPoint {
+public class WeatherEndPoint {
 
   @Bean
   public RestTemplate restTemplate() {
