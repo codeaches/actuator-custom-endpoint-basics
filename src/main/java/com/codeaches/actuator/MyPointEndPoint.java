@@ -26,8 +26,7 @@ public class MyPointEndPoint {
   @Autowired
   RestTemplate restTemplate;
 
-  @SuppressWarnings("unchecked")
-  @ReadOperation(produces = MediaType.APPLICATION_JSON_VALUE)
+  @ReadOperation
   public Map<String, String> check() {
     try {
       return restTemplate.getForObject("https://api.weather.gov", Map.class);
